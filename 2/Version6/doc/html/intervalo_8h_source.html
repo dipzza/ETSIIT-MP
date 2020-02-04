@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.11"/>
+<title>Gestión de intervalos: Fichero Fuente include/intervalo.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Gestión de intervalos
+   &#160;<span id="projectnumber">0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.11 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">intervalo.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Autores: Francisco Javier Bolívar Expósito  y  Samuel Jiménez Piñero</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef H_INTERVALO</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define H_INTERVALO</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="classIntervalo.html">    5</a></span>&#160;<span class="keyword">class </span><a class="code" href="classIntervalo.html">Intervalo</a>{</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keywordtype">bool</span> cerradoInf;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keywordtype">bool</span> cerradoSup;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordtype">double</span> cotaInf;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordtype">double</span> cotaSup;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classIntervalo.html#a9b5b23dda7ee26b444898457959cb03d">Intervalo</a>();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classIntervalo.html#a9b5b23dda7ee26b444898457959cb03d">Intervalo</a>(<span class="keywordtype">double</span> cotaInferior, <span class="keywordtype">double</span> cotaSuperior);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classIntervalo.html#a9b5b23dda7ee26b444898457959cb03d">Intervalo</a>(<span class="keywordtype">double</span> cotaInferior, <span class="keywordtype">double</span> cotaSuperior, <span class="keywordtype">bool</span> cerradoInferior, <span class="keywordtype">bool</span> cerradoSuperior);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classIntervalo.html#af8170b68c6d6a63192db6685b90f782f">getCotaInf</a>()<span class="keyword">const</span>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classIntervalo.html#a7f8ff94ce16f90a81a3c55f36044893b">getCotaSup</a>()<span class="keyword">const</span>;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classIntervalo.html#af972bcc502e3a7a6580a3fab83e43134">dentroCotaInf</a>()<span class="keyword">const</span>;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classIntervalo.html#af304bde2c8fc65e3a03324cd80f15f77">dentroCotaSup</a>()<span class="keyword">const</span>;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classIntervalo.html#a3e7cfa7c148a4e60be7040fecf506313">setIntervalo</a>(<span class="keywordtype">double</span> cotaInferior, <span class="keywordtype">double</span> cotaSuperior, <span class="keywordtype">bool</span> cerradoInferior, <span class="keywordtype">bool</span> cerradoSuperior);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classIntervalo.html#ab53adad27de8ec98cf8f4280bd3a7df9">esVacio</a>()<span class="keyword">const</span>;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classIntervalo.html#af55ac0bb47855ef909402e2ec76cda5b">estaDentro</a>(<span class="keywordtype">double</span> n)<span class="keyword">const</span>;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">/******************************/</span></div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">bool</span> valido(<span class="keywordtype">double</span> cinf, <span class="keywordtype">double</span> csup, <span class="keywordtype">bool</span> cerrinf, <span class="keywordtype">bool</span> cerrsup);</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keywordtype">void</span> escribir(<span class="keyword">const</span> <a class="code" href="classIntervalo.html">Intervalo</a> &amp;obj);</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keywordtype">void</span> leer(<a class="code" href="classIntervalo.html">Intervalo</a> &amp;obj);</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="keywordtype">void</span> comprobarVacio(<a class="code" href="classIntervalo.html">Intervalo</a> obj);</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<a class="code" href="classIntervalo.html">Intervalo</a> interseccion(<span class="keyword">const</span> <a class="code" href="classIntervalo.html">Intervalo</a>&amp;i1, <span class="keyword">const</span> <a class="code" href="classIntervalo.html">Intervalo</a>&amp;i2);</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classIntervalo_html_a7f8ff94ce16f90a81a3c55f36044893b"><div class="ttname"><a href="classIntervalo.html#a7f8ff94ce16f90a81a3c55f36044893b">Intervalo::getCotaSup</a></div><div class="ttdeci">double getCotaSup() const </div><div class="ttdoc">Devuelve la cota superior del intervalo. </div><div class="ttdef"><b>Definition:</b> <a href="intervalo_8cpp_source.html#l00055">intervalo.cpp:55</a></div></div>
+<div class="ttc" id="classIntervalo_html_af55ac0bb47855ef909402e2ec76cda5b"><div class="ttname"><a href="classIntervalo.html#af55ac0bb47855ef909402e2ec76cda5b">Intervalo::estaDentro</a></div><div class="ttdeci">bool estaDentro(double n) const </div><div class="ttdoc">Consulta si un determinado valor está dentro del intervalo. </div><div class="ttdef"><b>Definition:</b> <a href="intervalo_8cpp_source.html#l00101">intervalo.cpp:101</a></div></div>
+<div class="ttc" id="classIntervalo_html_a9b5b23dda7ee26b444898457959cb03d"><div class="ttname"><a href="classIntervalo.html#a9b5b23dda7ee26b444898457959cb03d">Intervalo::Intervalo</a></div><div class="ttdeci">Intervalo()</div><div class="ttdoc">Intervalo vacio por defectoSup valorInf = valorSup &amp; abiertoInf + abierto. </div><div class="ttdef"><b>Definition:</b> <a href="intervalo_8cpp_source.html#l00006">intervalo.cpp:6</a></div></div>
+<div class="ttc" id="classIntervalo_html_ab53adad27de8ec98cf8f4280bd3a7df9"><div class="ttname"><a href="classIntervalo.html#ab53adad27de8ec98cf8f4280bd3a7df9">Intervalo::esVacio</a></div><div class="ttdeci">bool esVacio() const </div><div class="ttdoc">Consulta si el intervalo almacenado es vacío o no. </div><div class="ttdef"><b>Definition:</b> <a href="intervalo_8cpp_source.html#l00091">intervalo.cpp:91</a></div></div>
+<div class="ttc" id="classIntervalo_html"><div class="ttname"><a href="classIntervalo.html">Intervalo</a></div><div class="ttdef"><b>Definition:</b> <a href="intervalo_8h_source.html#l00005">intervalo.h:5</a></div></div>
+<div class="ttc" id="classIntervalo_html_af972bcc502e3a7a6580a3fab83e43134"><div class="ttname"><a href="classIntervalo.html#af972bcc502e3a7a6580a3fab83e43134">Intervalo::dentroCotaInf</a></div><div class="ttdeci">bool dentroCotaInf() const </div><div class="ttdoc">Consulta si el intervalo es cerrado en su cota inferior. </div><div class="ttdef"><b>Definition:</b> <a href="intervalo_8cpp_source.html#l00060">intervalo.cpp:60</a></div></div>
+<div class="ttc" id="classIntervalo_html_a3e7cfa7c148a4e60be7040fecf506313"><div class="ttname"><a href="classIntervalo.html#a3e7cfa7c148a4e60be7040fecf506313">Intervalo::setIntervalo</a></div><div class="ttdeci">void setIntervalo(double cotaInferior, double cotaSuperior, bool cerradoInferior, bool cerradoSuperior)</div><div class="ttdoc">Define los valores del intervalo. </div><div class="ttdef"><b>Definition:</b> <a href="intervalo_8cpp_source.html#l00071">intervalo.cpp:71</a></div></div>
+<div class="ttc" id="classIntervalo_html_af304bde2c8fc65e3a03324cd80f15f77"><div class="ttname"><a href="classIntervalo.html#af304bde2c8fc65e3a03324cd80f15f77">Intervalo::dentroCotaSup</a></div><div class="ttdeci">bool dentroCotaSup() const </div><div class="ttdoc">Consulta si el intervalo es cerrado en su cota superior. </div><div class="ttdef"><b>Definition:</b> <a href="intervalo_8cpp_source.html#l00065">intervalo.cpp:65</a></div></div>
+<div class="ttc" id="classIntervalo_html_af8170b68c6d6a63192db6685b90f782f"><div class="ttname"><a href="classIntervalo.html#af8170b68c6d6a63192db6685b90f782f">Intervalo::getCotaInf</a></div><div class="ttdeci">double getCotaInf() const </div><div class="ttdoc">Devuelve la cota inferior del intervalo. </div><div class="ttdef"><b>Definition:</b> <a href="intervalo_8cpp_source.html#l00050">intervalo.cpp:50</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.11
+</small></address>
+</body>
+</html>

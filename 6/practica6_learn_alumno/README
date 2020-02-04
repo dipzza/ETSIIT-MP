@@ -1,0 +1,40 @@
+Reglas a añadir al Makefile de Netbeans.
+
+Dónde: Después de:
+
+.help-post: .help-impl
+# Add your post 'help' code here...
+
+
+Reglas a añadir: Tenéis que cambiar [NOMBRE_EJECUTABLE] por el nombre de vuestro ejecutable
+
+doxy:
+	doxygen doc/learn.doxy
+	firefox doc/html/index.html
+	
+zip: clobber
+	rm -rf zip/*
+	rm -rf dist/*
+	rm -rf doc/html doc/latex
+	zip -r zip/practica6_learn.zip * -x nbproject/private/*
+
+testcs:
+	@echo "Testcs: Aprende (crea) fichero español"
+	dist/Debug/GNU-Linux/[NOMBRE_EJECUTABLE] -c -l spanish -f data/spanish.bgr  data/quijote.txt
+	
+testas:
+	@echo "Testas: Actualiza el fichero de español"
+	dist/Debug/GNU-Linux/[NOMBRE_EJECUTABLE] -a -l spanish -f data/spanish.bgr  data/fortunata.txt
+	
+testcml:
+	@echo "Testcs: Aprende inglés y francés"
+	dist/Debug/GNU-Linux/[NOMBRE_EJECUTABLE] -c -l english -f data/english.bgr  data/aliceWonder.txt data/changedMan.txt
+	dist/Debug/GNU-Linux/[NOMBRE_EJECUTABLE] -c -l french -f data/french.bgr  data/diderot.txt data/lesMiserables.txt
+	
+testcsv:
+	@echo "Testcsv: [VALGRIND] Aprende (crea) fichero español"
+	valgrind --leak-check=full dist/Debug/GNU-Linux/[NOMBRE_EJECUTABLE] -c -l spanish -f data/spanish_v.bgr  data/quijote.txt
+	
+testasv:
+	@echo "Testasv: [VALGRIND] Actualiza el fichero de español"
+	valgrind --leak-check=full dist/Debug/GNU-Linux/[NOMBRE_EJECUTABLE] -a -l spanish -f data/spanish_v.bgr  data/fortunata.txt
